@@ -25,7 +25,7 @@ message = client.messages.create(
                                 )
 
 
-url3="https://efmr-dev1.fa.us6.oraclecloud.com/fscmService/PurchaseRequestService?WSDL"
+url3="https://xxxx-dev1.fa.us6.oraclecloud.com/fscmService/PurchaseRequestService?WSDL"
 
 headers1 = {'content-type': 'text/xml','Authorization': 'Basic xxxxxxxxxxxx0aXMuY29xxxxxxxxxxxbx='}
 
@@ -33,12 +33,12 @@ body_pr = """<soapenv:Envelope xmlns:pur="http://xmlns.oracle.com/apps/prc/po/ed
    <soapenv:Body>
       <tns:createRequisition xmlns:ns1="http://xmlns.oracle.com/adf/svc/errors/" xmlns:ns2="http://xmlns.oracle.com/apps/prc/po/editDocument/purchaseRequestService/" xmlns:ns3="http://xmlns.oracle.com/adf/svc/types/" xmlns:ns4="commonj.sdo/xml" xmlns:ns5="commonj.sdo/java" xmlns:ns6="commonj.sdo" xmlns:nxsd="http://xmlns.oracle.com/pcbpel/nxsd">
          <tns:interfaceSourceCode>WhatsApp</tns:interfaceSourceCode>
-         <tns:requisitioningBUName>OTIS HONG KONG</tns:requisitioningBUName>
+         <tns:requisitioningBUName>HONG KONG</tns:requisitioningBUName>
          <tns:groupBy>SUPPLIER</tns:groupBy>
          <tns:initiateApprovalAfterRequisitionImport>Y</tns:initiateApprovalAfterRequisitionImport>
          <tns:maximumBatchSize>1</tns:maximumBatchSize>
          <tns:purchaseRequestPayload>
-            <ns2:RequisitioningBUName>OTIS HONG KONG</ns2:RequisitioningBUName>
+            <ns2:RequisitioningBUName>HONG KONG</ns2:RequisitioningBUName>
             <ns2:Attribute1>Service Without Work Order-500</ns2:Attribute1>
             <ns2:Attribute2>51149942_00000000</ns2:Attribute2>
             
@@ -50,12 +50,12 @@ body_pr = """<soapenv:Envelope xmlns:pur="http://xmlns.oracle.com/apps/prc/po/ed
            
             <ns2:PurchaseRequestInputReqLineInterface>
                 
-              <ns2:ProcurementBUName>OTIS HONG KONG</ns2:ProcurementBUName>
+              <ns2:ProcurementBUName>HONG KONG</ns2:ProcurementBUName>
               <ns2:Attribute1>249762</ns2:Attribute1>
 
               <ns2:ItemDescription>{0}</ns2:ItemDescription>
 
-               <ns2:DeliverToLocationCode>Otis Hong Kong</ns2:DeliverToLocationCode>
+               <ns2:DeliverToLocationCode>Hong Kong</ns2:DeliverToLocationCode>
               <ns2:SupplierName>Otis Elevator (China) Co. (OECC)</ns2:SupplierName>
                <ns2:SupplierSiteName>23929444</ns2:SupplierSiteName>
               <ns2:UnitOfMeasure>EA</ns2:UnitOfMeasure>
@@ -65,7 +65,7 @@ body_pr = """<soapenv:Envelope xmlns:pur="http://xmlns.oracle.com/apps/prc/po/ed
               <ns2:Price>{1}</ns2:Price>
                <ns2:Attribute5>Y</ns2:Attribute5>
                <pur:RequestedDeliveryDate>2020-12-09</pur:RequestedDeliveryDate>
-               <ns2:CategoryName>OTIS Purchasing</ns2:CategoryName>
+               <ns2:CategoryName>Purchasing</ns2:CategoryName>
                <ns2:DestinationTypeCode>EXPENSE</ns2:DestinationTypeCode>
                <ns2:Quantity>{2}</ns2:Quantity>
                <ns2:RateType>Corporate</ns2:RateType>               
